@@ -1,0 +1,116 @@
+\documentclass[12pt, a4paper]{scrartcl}
+
+\usepackage{mystyle}
+\usepackage{siunitx}
+
+\title{Formelsammlung --- Signale und Systeme}
+\subtitle{bei Prof.\ Thao Dang}
+
+\begin{document}
+
+\maketitle
+
+\section{Allgemeines}
+
+Dämpfung zweier Pegel
+\begin{align*}
+  a &= 20 \cdot \log \left(\frac{\text{Eingang}}{\text{Ausgang}} \right) \si{\decibel}\\
+  \intertext{und wenn Eingang = 1:}
+  &= -20 \cdot \log(\textrm{Ausgang}) \si{\decibel}
+\end{align*}
+
+
+\textbf{Eigenschaften Allgemeine Cosinusfunktion}
+
+\begin{align*}
+  f(t) &= A\cos(\omega \cdot t)\\
+  T &= \frac{2\pi}{\omega}
+\end{align*}
+
+\textbf{Betrag einer komplexen Zahl}
+\begin{align*}
+  Z &= x+ jy\\
+  |Z| &= \sqrt{x^2 +y^2}
+\end{align*}
+
+\textbf{Winkel einer komplexen Zahl}
+\[\arg (Z) = \varphi =
+  \begin{cases}
+    \arctan \left(\frac{y}{x}\right) & \text{für } x>0, y \text{ bel.}\\
+    \arctan \left(\frac{y}{x}\right) + \pi & \text{für } x<0, y \text{ bel.}\\
+    \frac{\pi}{2} & \text{für } x = 0, y > 0\\
+    - \frac{\pi}{2} & \text{für } x = 0,y < 0
+  \end{cases}\]
+
+\textbf{Phasengang}
+\[b(f) = -\arg(Z)\]
+Die Phase muss dem negativen Winkel entsprechen, um bei nachlaufendem Signal eine positive Zeitverzögerung zu erhalten.
+
+\textbf{Phasenlaufzeit/Zeitverzögerung}
+\[t_p = \frac{b(f)}{\omega}\]
+
+\textbf{Formel der verbotenen Werte}
+
+Verfahren zur einfachen Lösung von Partialbrüchen. Dabei wird jeweils mit dem Nenner eines einzelnen Partialbruchs durchmultipliziert, gekürzt und danach für \(p\) der zuvor verbotene Wert der Polstelle des aktuellen Partialbruchs eingesetzt. Alle anderen Partialbrüche werden somit \(=0\) und es kann ein sehr einfacher Vergleich mit der linken Seite der Gleichung, der Ursprungsgleichung, gemacht werden.
+
+Es verhält sich jedoch anders, wenn eine mehrfache Nullstelle zur Anwendung kommt.
+
+\section{Fourierreihen}
+
+\begin{tcolorbox}
+  Das erste Glied \(a_1 / b_1 / c_1\)~einer Fourierreihe heißt \mybfcol{Grundschwingung}. Alle folgenden Glieder werden \mybfcol{Oberschwingungen} genannt.
+\end{tcolorbox}
+
+
+\section{Fouriertransformation}
+
+\section{Faltung}
+
+\begin{tcolorbox}
+  Werden zwei Signale \(u_1(t), u_2(t)\)~unterschiedlicher Bandbreiten \(T_1, T_2\)~gefaltet,\\
+  so beträgt die Bandbreite des neuen Signals \(T_1 + T_2\).
+\end{tcolorbox}
+
+\subsection{Faltung mit \(\sigma (t)\)}
+
+Wird eine Funktion mit \(\sigma (t)\) gefaltet, so ergibt sich für das Faltungsintegral:
+
+\[
+  n(t) \star \sigma (t) = \int_{-\infty}^{\infty} n(\tau) \cdot \sigma(t - \tau) d\tau = \int_{-\infty}^t n(\tau) d\tau
+\]
+
+\textbf{Für Pol- Nullstellendiagramm:}
+
+\begin{itemize}
+\item \(p\)s im Nenner und im Zähler isolieren
+\item Pol- und Nullstellen für \(p\) finden
+\item Polstellen als \(\times\) und Nullstellen als \(\bigcirc\) in ein \(\operatorname{Re} / \operatorname{Im}\)-Diagramm eintragen
+\end{itemize}
+
+\textbf{Bode-Diagramm}
+
+Das Bode-Diagramm besteht aus dem \textbf{Amplitudengang} und dem \textbf{Phasengang}. Der Amplitudengang \(A(f)\) lässt sich berechnen durch
+\[A(f) = |H(f)|\]
+während sich der Phasengang \(b(f)\) berechnen lässt über
+\[b(f) = -\arctan\left(\frac{\operatorname{Im}(H(f))}{\operatorname{Re}(H(f))}\right) +
+  \begin{cases}
+    0 & \operatorname{Re}(H(f)) > 0\\
+    \pm \pi & \operatorname{Re}(H(f)) < 0
+  \end{cases}
+\]
+
+\mybfcol{Achtung!} Es gilt:
+\begin{align*}
+  H(p) &= \frac{\textrm{Zähler}}{\textrm{Nenner}}\\
+  \operatorname{arg}(H(p)) = 
+\end{align*}
+
+\textbf{Sprungantwort schnell berechnen}
+\[a(t) = (a(0) - a(\infty)) \cdot e^{-\frac{t}{T}} + a(\infty)\]
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
