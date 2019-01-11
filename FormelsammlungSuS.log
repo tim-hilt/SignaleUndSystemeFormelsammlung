@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018/Arch Linux)  (format=lualatex 2019.1.2)  11 JAN 2019 10:53
+This is LuaTeX, Version 1.07.0 (TeX Live 2018/Arch Linux)  (format=lualatex 2019.1.2)  11 JAN 2019 11:10
  system commands enabled.
  file:line:error style messages enabled.
 **\input FormelsammlungSuS.tex
@@ -32,7 +32,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.111 seconds
+luaotfload | main : initialization completed in 0.125 seconds
 
 (./FormelsammlungSuS.tex
 (/usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -1794,24 +1794,24 @@ LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 11.52003pt on input line 73.
+(Font)              scaled to size 11.52003pt on input line 74.
 LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 5.60002pt on input line 73.
+(Font)              scaled to size 5.60002pt on input line 74.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 73.
+(hyperref)                removing `math shift' on input line 74.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sigma' on input line 73.
+(hyperref)                removing `\sigma' on input line 74.
 
 [2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
  (./FormelsammlungSuS.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
 Package rerunfilecheck Info: File `FormelsammlungSuS.out' has not changed.
 (rerunfilecheck)             Checksum: 4F5BC2F1F47801CED758C86D39EDD693;258.
 Package logreq Info: Writing requests to 'FormelsammlungSuS.run.xml'.
@@ -1825,7 +1825,7 @@ Here is how much of LuaTeX's memory you used:
  632 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 15 attribute, 73 glue_spec
 , 15 attribute_list, 1 write nodes
-   avail lists: 1:6,2:1171,3:551,4:26,5:266,6:16,7:1337,8:51,9:231,10:5,11:135,1
+   avail lists: 1:6,2:1166,3:515,4:26,5:284,6:16,7:1432,8:52,9:231,10:5,11:157,1
 2:1
  47605 multiletter control sequences out of 65536+600000
  97 fonts using 17130679 bytes
@@ -1840,7 +1840,7 @@ usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf
 s/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on FormelsammlungSuS.pdf (3 pages, 92916 bytes).
+Output written on FormelsammlungSuS.pdf (3 pages, 93094 bytes).
 
 PDF statistics: 98 PDF objects out of 1000 (max. 8388607)
  75 compressed objects within 1 object stream
