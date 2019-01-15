@@ -9,7 +9,8 @@
     "latex2e"
     "scrartcl"
     "scrartcl12"
-    "mystyle"
-    "siunitx"))
+    "siunitx"
+    "circuitikz"
+    "mystyle"))
  :latex)
 
