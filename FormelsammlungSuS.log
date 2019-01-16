@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018/Arch Linux)  (format=lualatex 2019.1.14)  15 JAN 2019 09:59
+This is LuaTeX, Version 1.07.0 (TeX Live 2018/Arch Linux)  (format=lualatex 2019.1.14)  16 JAN 2019 21:17
  system commands enabled.
  file:line:error style messages enabled.
 **\input FormelsammlungSuS.tex
@@ -32,7 +32,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.108 seconds
+luaotfload | main : initialization completed in 0.107 seconds
 
 (./FormelsammlungSuS.tex
 (/usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -94,8 +94,8 @@ Package typearea Info: These are the values describing the layout:
 (typearea)             \paperwidth      = 597.50793pt
 (typearea)              \textwidth      = 448.13095pt
 (typearea)              DIV departure   = -6%
-(typearea)              \evensidemargin = 2.4185pt
-(typearea)              \oddsidemargin  = 2.4185pt
+(typearea)              \evensidemargin = 27.31467pt
+(typearea)              \oddsidemargin  = -22.47766pt
 (typearea)             \paperheight     = 845.04694pt
 (typearea)              \textheight     = 635.5pt
 (typearea)              \topmargin      = -41.72441pt
@@ -843,16 +843,18 @@ LaTeX Info: Redefining \scshape on input line 3654.
 LaTeX Info: Redefining \upshape on input line 3659.
 LaTeX Info: Redefining \em on input line 3689.
 LaTeX Info: Redefining \emph on input line 3714.
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <12> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 3764.
 LaTeX Info: Redefining \- on input line 3768.
 ))
 luaotfload | cache : Lookup cache loaded from /home/tim/.texlive/texmf-var/luate
 x-cache/generic/names/luaotfload-lookup-cache.luc.
+luaotfload | aux : font no 33 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 33
 luaotfload | aux : font no 31 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : no font with id 31
-luaotfload | aux : font no 29 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : no font with id 29
 
 Package fontspec Info: Font family 'SourceSerifPro(0)' created for font
 (fontspec)             'Source Serif Pro' with options [Ligatures=TeX].
@@ -882,53 +884,50 @@ lig;+smcp;"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
 LaTeX Info: Redefining \rmfamily on input line 12.
-luaotfload | aux : font no 36 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : no font with id 36
-luaotfload | aux : font no 34 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : no font with id 34
 
-Package fontspec Info: Font family 'SourceSansPro(0)' created for font 'Source
-(fontspec)             Sans Pro' with options [Ligatures=TeX].
+Package fontspec Info: Font family 'FiraSans(0)' created for font 'Fira Sans'
+(fontspec)             with options [Ligatures=TeX].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"SourceSansPro:mode=node;script=latn;language=DFLT;+tl
-ig;"
+(fontspec)             <->"FiraSans:mode=node;script=latn;language=DFLT;+tlig;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->"SourceSansPro:mode=node;script=latn;language=DFLT;+tl
-ig;+smcp;"
+(fontspec)             <->"FiraSans:mode=node;script=latn;language=DFLT;+tlig;+s
+mcp;"
 (fontspec)             - 'bold' (bx/n) with NFSS spec.:
-(fontspec)             <->"SourceSansPro/B:mode=node;script=latn;language=DFLT;+
-tlig;"
+(fontspec)             <->"FiraSans/B:mode=node;script=latn;language=DFLT;+tlig;
+"
 (fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.:
-(fontspec)             <->"SourceSansPro/B:mode=node;script=latn;language=DFLT;+
-tlig;+smcp;"
+(fontspec)             <->"FiraSans/B:mode=node;script=latn;language=DFLT;+tlig;
++smcp;"
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->"SourceSansPro/I:mode=node;script=latn;language=DFLT;+
-tlig;"
-(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
+(fontspec)             <->"FiraSans/I:mode=node;script=latn;language=DFLT;+tlig;
+"
+(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.:
+(fontspec)             <->"FiraSans/I:mode=node;script=latn;language=DFLT;+tlig;
++smcp;"
 (fontspec)             - 'bold italic' (bx/it) with NFSS spec.:
-(fontspec)             <->"SourceSansPro/BI:mode=node;script=latn;language=DFLT;
-+tlig;"
-(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+(fontspec)             <->"FiraSans/BI:mode=node;script=latn;language=DFLT;+tlig
+;"
+(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+(fontspec)             <->"FiraSans/BI:mode=node;script=latn;language=DFLT;+tlig
+;+smcp;"
 
 LaTeX Info: Redefining \sffamily on input line 13.
-luaotfload | aux : font no 37 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : no font with id 37
 luaotfload | aux : font no 39 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : no font with id 39
+luaotfload | aux : font no 41 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 41
+luaotfload | aux : font no 42 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 42
 luaotfload | aux : font no 40 (nil) does not define feature smcp for script latn
  with language dflt
 luaotfload | aux : no font with id 40
-luaotfload | aux : font no 38 (nil) does not define feature smcp for script latn
- with language dflt
-luaotfload | aux : no font with id 38
 
 Package fontspec Info: Font family 'SourceCodePro(0)' created for font 'Source
 (fontspec)             Code Pro' with options
@@ -1586,6 +1585,28 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 268.
 )
+(/usr/share/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
+Package: scrlayer-scrpage 2018/03/30 v3.25 KOMA-Script package (end user interfa
+ce for scrlayer)
+
+(/usr/share/texmf-dist/tex/latex/koma-script/scrlayer.sty
+Package: scrlayer 2018/03/30 v3.25 KOMA-Script package (defining layers and page
+ styles)
+Package scrlayer Info: Using already defined \footheight
+(scrlayer)             hoping, that this is a length and
+(scrlayer)             not only a macro on input line 109.
+Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 1997
+.
+)
+Package scrlayer-scrpage Info: Makeing stand-alone element `pagehead' from
+(scrlayer-scrpage)             alias to `pageheadfoot' on input line 1241.
+Package scrlayer-scrpage Info: deactivating warning for font element
+(scrlayer-scrpage)             `pagefoot' on input line 1268.
+)
+Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
+Package scrkbase Info: You've told me to redefine the font selection of the
+(scrkbase)             element `pagination' that is an alias of element
+(scrkbase)             `pagenumber' on input line 14.
 Package biblatex Info: Trying to load language 'ngerman'...
 Package biblatex Info: ... file 'ngerman.lbx' found.
 
@@ -1612,22 +1633,22 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (./FormelsammlungSuS.aux)
 \openout1 = FormelsammlungSuS.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English
 .dict
@@ -1673,7 +1694,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes: twoside 
 * h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
 * v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
 * \paperwidth=597.50787pt
@@ -1687,7 +1708,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \headsep=21.75pt
 * \topskip=12.0pt
 * \footskip=50.75pt
-* \marginparwidth=49.79233pt
+* \marginparwidth=74.68849pt
 * \marginparsep=12.8401pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
@@ -1695,8 +1716,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -1706,74 +1727,72 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 9.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 9.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 9.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 9.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 9.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 9.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 9.
-LaTeX Font Info:    Redeclaring math accent \check on input line 9.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 9.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 9.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 9.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 9.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 9.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 28.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 28.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 28.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 28.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 28.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 28.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 28.
+LaTeX Font Info:    Redeclaring math accent \check on input line 28.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 28.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 28.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 28.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 9.
+(Font)              `operators' in the math version `normal' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/SourceSerifPro(0)/m/n on input line 9
-.
+(Font)                  OT1/cmr/m/n --> TU/SourceSerifPro(0)/m/n on input line 2
+8.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 9.
+(Font)              `operators' in the math version `bold' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/SourceSerifPro(0)/m/n on input line 
-9.
+28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/SourceSerifPro(0)/m/n --> TU/SourceSerifPro(0)/m/n on
- input line 9.
+ input line 28.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/SourceSerifPro(0)/m/it on input line
- 9.
+ 28.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/SourceSerifPro(0)/bx/n on input line
- 9.
+ 28.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/SourceSansPro(0)/m/n on input line 9
-.
+(Font)                  OT1/cmss/m/n --> TU/FiraSans(0)/m/n on input line 28.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/SourceCodePro(0)/m/n on input line 9
-.
+(Font)                  OT1/cmtt/m/n --> TU/SourceCodePro(0)/m/n on input line 2
+8.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/SourceSerifPro(0)/m/n --> TU/SourceSerifPro(0)/bx/n o
-n input line 9.
+n input line 28.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/SourceSerifPro(0)/bx/it on input li
-ne 9.
+ne 28.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/SourceSansPro(0)/bx/n on input line
- 9.
+(Font)                  OT1/cmss/bx/n --> TU/FiraSans(0)/bx/n on input line 28.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/SourceCodePro(0)/bx/n on input line 
-9.
-LaTeX Info: Redefining \celsius on input line 9.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 9.
+28.
+LaTeX Info: Redefining \celsius on input line 28.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 28.
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 9.
-Package gensymb Info: Using \Omega for \ohm on input line 9.
+LaTeX Info: Redefining \ohm on input line 28.
+Package gensymb Info: Using \Omega for \ohm on input line 28.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1787,10 +1806,10 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'FormelsammlungSuS.bbl' not found.
 No file FormelsammlungSuS.bbl.
-Package biblatex Info: Reference section=0 on input line 9.
-Package biblatex Info: Reference segment=0 on input line 9.
+Package biblatex Info: Reference section=0 on input line 28.
+Package biblatex Info: Reference segment=0 on input line 28.
 \AtBeginShipoutBox=\box82
-Package hyperref Info: Link coloring ON on input line 9.
+Package hyperref Info: Link coloring ON on input line 28.
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1799,80 +1818,110 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count473
 )
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
 
 (./FormelsammlungSuS.out) (./FormelsammlungSuS.out)
 \@outlinefile=\write7
 
 \openout7 = FormelsammlungSuS.out
 LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 9.60004pt on input line 9.
+(Font)              scaled to size 9.60004pt on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 6.40002pt on input line 9.
+(Font)              scaled to size 6.40002pt on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 4.80002pt on input line 9.
+(Font)              scaled to size 4.80002pt on input line 28.
 LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 13.82405pt on input line 12.
+(Font)              scaled to size 13.82405pt on input line 31.
 LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 8.00003pt on input line 12.
- [1
+(Font)              scaled to size 8.00003pt on input line 31.
+ (./FormelsammlungSuS.toc)
+\tf@toc=\write8
 
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+\openout8 = FormelsammlungSuS.toc
 LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 11.52003pt on input line 101.
+(Font)              scaled to size 5.60002pt on input line 32.
 LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
-(Font)              scaled to size 5.60002pt on input line 101.
+(Font)              scaled to size 4.00002pt on input line 32.
+
+[1
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 101.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+]
+Overfull \hbox (0.62495pt too wide) in paragraph at lines 123--124
+[][]\TU/FiraSans(0)/m/n/12 Das Sys-tem ist grenz-sta-bil[], wenn nur ein-fa-che
+ Po-le im Pol-Nullstellen-Diagramm
+ []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\sigma' on input line 101.
+Overfull \hbox (0.48494pt too wide) in paragraph at lines 124--125
+[][]\TU/FiraSans(0)/m/n/12 Das Sys-tem ist in-sta-bil[], wenn Po-le in der rech
+-ten Hal-be-be-ne des Pol-Nullstellen-
+ []
 
-[3] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
+[3
+
+] [4
+
+] [5
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+ []
+
+[6
+
+] [7
+
+] [8
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 267.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 267.
  (./FormelsammlungSuS.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 138.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 138.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 267.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 267.
 Package rerunfilecheck Info: File `FormelsammlungSuS.out' has not changed.
-(rerunfilecheck)             Checksum: 27F24F8F1F2E5E6ADD065C6C206F8FFB;303.
+(rerunfilecheck)             Checksum: FAF412CF878EDA4C097F1A1CC6520666;380.
 Package logreq Info: Writing requests to 'FormelsammlungSuS.run.xml'.
 
 \openout1 = FormelsammlungSuS.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 51994 strings out of 494407
+ 54037 strings out of 494407
  100000,1977958 words of node,token memory allocated
- 632 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 15 attribute, 73 glue_spec
-, 15 attribute_list, 1 write nodes
-   avail lists: 1:4,2:1359,3:542,4:34,5:305,6:17,7:1449,8:51,9:236,10:5,11:131,1
-2:1
- 54669 multiletter control sequences out of 65536+600000
- 98 fonts using 17359159 bytes
- 73i,13n,89p,9102b,2189s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf-dist/fonts/opentype/adobe/sourceserifpro/SourceSerifPro-Bold.o
-tf></usr/share/texmf-dist/fonts/opentype/adobe/sourceserifpro/SourceSerifPro-Reg
-ular.otf></usr/share/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSansPro
--Regular.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
-usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type
-1/public/amsfonts/latxfont/lcircle1.pfb>
-Output written on FormelsammlungSuS.pdf (4 pages, 100404 bytes).
+ 657 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 20 attribute, 74 glue_spec
+, 20 attribute_list, 1 write nodes
+   avail lists: 1:5,2:5808,3:1426,4:75,5:292,6:52,7:3332,8:60,9:722,10:5,11:127,
+12:1
+ 56658 multiletter control sequences out of 65536+600000
+ 105 fonts using 20018703 bytes
+ 73i,20n,89p,9102b,2189s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf-dist/fonts/opentype/adobe/sourceserifpro/SourceSerifPro-Regula
+r.otf></usr/share/texmf-dist/fonts/opentype/public/fira/FiraSans-Bold.otf></usr/
+share/texmf-dist/fonts/opentype/public/fira/FiraSans-Regular.otf></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.
+pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cmextra/cmmib6.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cmextra/cmmib8.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/latxfont/lcircle1.pfb>
+Output written on FormelsammlungSuS.pdf (8 pages, 147943 bytes).
 
-PDF statistics: 111 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 131072)
- 64 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 178 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 131072)
+ 72 words of extra memory for PDF output out of 10000 (max. 100000000)
 

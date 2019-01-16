@@ -1,0 +1,9 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Grundlagen und Metriken}{2}{section.1}
+\contentsline {section}{\numberline {2}LTI-Systeme}{3}{section.2}
+\contentsline {section}{\numberline {3}Fourierreihen}{4}{section.3}
+\contentsline {section}{\numberline {4}Fouriertransformation}{5}{section.4}
+\contentsline {section}{\numberline {5}Faltung}{6}{section.5}
+\contentsline {section}{\numberline {6}Filter und Übertragungsfunktionen}{7}{section.6}
+\contentsline {section}{\numberline {7}Konstruktion Bode-Diagramm}{8}{section.7}
