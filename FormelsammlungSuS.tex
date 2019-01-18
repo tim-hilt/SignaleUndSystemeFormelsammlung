@@ -2,9 +2,23 @@
 
 \renewcommand{\familydefault}{\sfdefault}
 
-\usepackage{siunitx}
+\usepackage{siunitx, pdfpages}
 \usepackage[europeanresistors, americaninductors]{circuitikz}
+\usetikzlibrary{arrows.meta}
 \usepackage{mystyle}
+
+\newcommand{\LTI}[4][1]{
+  \begin{center}
+    \begin{tikzpicture}[scale=#1]
+      \draw[->, thick] (0,1) -- (2,1);
+      \draw[thick] (2,0) rectangle (5,2) node [pos=.5] {#3};
+      \draw[->, thick] (5,1) -- (7,1);
+      \draw [above] (0,1) node {#2};
+      \draw [above] (7,1) node {#4};
+      \draw [above] (3.5,2) node {\sffamily LTI};
+    \end{tikzpicture}
+  \end{center}
+}
 
 \usepackage{scrlayer-scrpage}
 
@@ -74,13 +88,13 @@ Die Phase muss dem negativen Winkel entsprechen, um bei nachlaufendem Signal ein
 \begin{figure}[H]
   \centering
   \begin{circuitikz}
-    \draw (0,0) node [ocirc]{} -- (1.5,0);
-    \draw (4.5,0) -- (6,0) node [ocirc]{};
-    \draw (0,-2) node [ocirc]{} -- (1.5,-2);
-    \draw (4.5,-2) -- (6,-2) node [ocirc]{};
-    \draw (-.5,0) to [open, v=\(U_e\)] (-.5, -2);
-    \draw (6.5,0) to [open, v^=\(U_a\)] (6.5, -2);
-    \draw (1.5,.25) rectangle (4.5,-2.25) node [pos=.5]{\huge\sffamily LTI};
+    \draw[very thick] (0,0) node [ocirc]{} -- (1.5,0);
+    \draw[very thick] (4.5,0) -- (6,0) node [ocirc]{};
+    \draw[very thick] (0,-2) node [ocirc]{} -- (1.5,-2);
+    \draw[very thick] (4.5,-2) -- (6,-2) node [ocirc]{};
+    \draw[] (-.5,0) to [open, v=\(U_e\)] (-.5, -2);
+    \draw[] (6.5,0) to [open, v^=\(U_a\)] (6.5, -2);
+    \draw[very thick] (1.5,.25) rectangle (4.5,-2.25) node [pos=.5]{\huge\sffamily LTI};
     \draw (0,-3) node {\(x(t)\)};
     \draw (1.5,-3) node {\(\star\)};
     \draw (3,-3) node {\(h(t)\)};
@@ -97,7 +111,7 @@ Die Phase muss dem negativen Winkel entsprechen, um bei nachlaufendem Signal ein
 \end{figure}
 
 \textbf{Linearität}\\
-Ein System gilt als linear, \mytextcol{wenn zum Signal nichts addiert wird}, sondern dass Signal nur entweder verschoben an der \(t\)-Achse oder skaliert in \(y\)-Richtung ist.
+Ein System gilt als linear, \mytextcol{wenn zum Signal nichts addiert wird}, sondern dass Signal nur entweder verschoben entlang der \(t\)-Achse oder skaliert in \(y\)-Richtung ist.
 
 \textbf{Zeitinvarianz}\\
 Wird das Signal \(x(t)\) noch \mytextcol{mit einer anderen Funktion, die von \(t\) abhängt multipliziert}, dann ist das System \mybfcol{nicht} zeitinvariant, da diese Funktion sich mit der Zeit verändert und \(x(t)\) somit immer mit anderen Werten multipliziert wird.
@@ -123,6 +137,21 @@ Beim Betrachten der Stabilität unterscheidet man 3 Fälle:
 \item \mytextcol{Das System ist grenzstabil}, wenn nur einfache Pole im Pol-Nullstellen-Diagramm auf der imaginären Achse liegen
 \item \mytextcol{Das System ist instabil}, wenn Pole in der rechten Halbebene des Pol-Nullstellen-Diagramms liegen und/oder mehrfache Pole auf der imaginären Achse liegen
 \end{enumerate}
+\newpage
+\textbf{Sprungantwort und Impulsantwort}
+
+Die Sprungantwort ist das Ausgangssignal eines Systems wenn am Eingang die Sprungfunktion \(\sigma(t)\) angelegt wird. Sie wird allgemein auch mit \mytextcol{\(a(t)\)} bezeichnet.
+
+\LTI[.5]{\(\sigma(t)\)}{\(h(t)\)}{\(a(t)\)}
+
+Die Impulsantwort hingegen ist das Ausgangssignal eines Systems, wenn am Eingang die Impulsfunktion \(\delta(t)\) angelegt wird. Sie wird allgemein auch mit \mytextcol{\(h(t)\)} bezeichnet.
+
+\LTI[.5]{\(\delta(t)\)}{\(h(t)\)}{\(h(t)\)}
+
+Um von der Sprungantwort auf die Impulsantwort zu schließen muss \mybfcol{Die Sprungantwort einmal abgeleitet werden,} da gilt:
+\[\sigma(t)' = \delta(t) \quad\Longleftrightarrow\quad a(t)' = h(t)\]
+Demnach gilt auch:
+\[\int h(t) dt = a(t)\]
 
 \clearpage
 \section{Fourierreihen}
@@ -238,6 +267,19 @@ Im Fourierbereich: \(\omega = 2 \pi f\), im Laplacebereich: \(j\omega = p\)
   \end{figure}
 \end{minipage}
 
+\textbf{Kondensator und Spule im Frequenzbereich}
+
+\begin{center}
+  \begin{tabular}{lll}
+    \toprule
+    Frequenz & Spule & Kondensator\\
+    \midrule
+    \(\SI{0}{\hertz}\) & \(Z_L = \SI{0}{\ohm}\); Kurzschluss & \(Z_C = \infty\ \si{\ohm}\); Leerlauf\\
+    \(\infty\ \si{\hertz}\) & \(Z_L = \infty\ \si{\ohm}\); Leerlauf & \(Z_C = \SI{0}{\ohm}\); Kurzschluss\\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
 \clearpage
 \section{Konstruktion Bode-Diagramm}
 
@@ -263,6 +305,23 @@ während sich der Phasengang \(b(f)\) berechnen lässt über
 
 \textbf{Sprungantwort schnell berechnen}
 \[a(t) = (a(0) - a(\infty)) \cdot e^{-\frac{t}{T}} + a(\infty)\]
+
+\newpage
+\phantomsection%
+\addtocounter{section}{1}
+\addsectiontocentry{\arabic{section}}{Anhang}
+
+\newpage
+\phantomsection%
+\addtocounter{subsection}{1}
+\addsubsectiontocentry{A}{Tabellen aus Buch von Prof.\ Koch und Prof.\ Stämpfle}
+\includepdf[pages=7-]{Cheatsheet.pdf}
+
+\newpage
+\phantomsection%
+\addtocounter{subsection}{1}
+\addsubsectiontocentry{B}{Tabelle aus Vorlesung}
+\includepdf{FourierKorrespondenzen.pdf}
 
 \end{document}
 

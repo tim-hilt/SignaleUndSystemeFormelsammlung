@@ -12,8 +12,11 @@
     "scrartcl"
     "scrartcl12"
     "siunitx"
+    "pdfpages"
     "circuitikz"
     "mystyle"
-    "scrlayer-scrpage"))
+    "scrlayer-scrpage")
+   (TeX-add-symbols
+    '("LTI" ["argument"] 3)))
  :latex)
 
