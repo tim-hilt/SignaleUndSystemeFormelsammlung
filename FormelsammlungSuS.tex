@@ -1,11 +1,17 @@
 \documentclass[12pt, a4paper, twoside]{scrartcl}
 
-\renewcommand{\familydefault}{\sfdefault}
-
-\usepackage{siunitx, pdfpages}
+\usepackage{siunitx, pdfpages, pgfplots, amsfonts, trfsigns, scrlayer-scrpage}
 \usepackage[europeanresistors, americaninductors]{circuitikz}
-\usetikzlibrary{arrows.meta}
 \usepackage{mystyle}
+
+\usetikzlibrary{arrows.meta}
+\tikzset{>=latex}
+
+\pgfplotsset{
+  width=7cm,
+  grid = major,
+  axis lines = center,
+}
 
 \newcommand{\LTI}[4][1]{
   \begin{center}
@@ -19,8 +25,6 @@
     \end{tikzpicture}
   \end{center}
 }
-
-\usepackage{scrlayer-scrpage}
 
 \clearpairofpagestyles{}
 
@@ -40,12 +44,20 @@
 \date{\today}
 
 \begin{document}
-
+% ---------- Druckt Dokument serifenlos, lässt SI-units aber zufrieden --------
+\sffamily
+% -----------------------------------------------------------------------------
 \maketitle
 \tableofcontents
-\clearpage
 
-\section{Grundlagen und Metriken}
+% -----------------------------
+\addtokomafont{section}{\clearpage} % Druckt jede section auf einer neuen Seite
+                                    % Wenns nicht hier sondern in der Präambel stehen
+                                    % würde, dann würde das Inhaltsverzeichnis auch
+                                    % auf einer neuen Seite gedruckt werden!
+% -----------------------------
+
+\section{Grundlagen}
 
 \textbf{Eigenschaften Allgemeine Cosinusfunktion}
 \begin{align*}
@@ -53,10 +65,58 @@
   T &= \frac{2\pi}{\omega} \quad ; \quad \omega = \frac{2\pi}{T}
 \end{align*}
 
+\textbf{\(\operatorname{si}(x)\)- und \(\operatorname{sinc}(x)\)-Funktionen}
+
+\begin{minipage}{.5\linewidth}
+\[
+  \operatorname{si}(x)=
+  \begin{cases}
+    \frac{\sin(x)}{x} & x \in \mathbb{R} \backslash 0\\
+    1 & x = 0
+  \end{cases}
+\]
+\end{minipage}%
+\begin{minipage}{.5\linewidth}
+  \begin{center}
+    \begin{tikzpicture}
+      \begin{axis}[
+          xmin = -4*pi,
+          xmax = 4*pi,
+          samples = 200,
+          ]
+        \addplot[myred,very thick,domain=-4*pi:4*pi]{sin(deg(x))/x};
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
+\end{minipage}
+
+\begin{minipage}{.5\linewidth}
+  \[
+    \operatorname{sinc}(x)=
+    \begin{cases}
+      \frac{\sin(\pi x)}{\pi x} & x \in\mathbb{R} \backslash 0\\
+      1 & x = 0
+    \end{cases}
+  \]
+\end{minipage}%
+\begin{minipage}{.5\linewidth}
+  \begin{center}
+    \begin{tikzpicture}
+      \begin{axis}[
+          xmin = -4*pi,
+          xmax = 4*pi,
+          samples = 200,
+          ]
+        \addplot[myred,very thick,domain=-4*pi:4*pi]{(sin(deg(pi*x)))/(pi*x)};
+      \end{axis}
+    \end{tikzpicture}
+  \end{center}
+\end{minipage}
+
 \textbf{Betrag einer komplexen Zahl}
 \begin{align*}
-  Z &= x+ jy\\
-  |Z| &= \sqrt{x^2 +y^2}
+  Z &= a + jb\\
+  |Z| &= \sqrt{a^2 +b^2}
 \end{align*}
 
 \textbf{Winkel einer komplexen Zahl}
@@ -72,7 +132,7 @@
 \begin{align*}
   a &= 20 \cdot \log \left(\frac{\text{Eingang}}{\text{Ausgang}} \right) \si{\decibel}\\
   \intertext{und wenn Eingang = 1:}
-  &= -20 \cdot \log(\textrm{Ausgang}) \si{\decibel}
+  &= -20 \cdot \log(\text{Ausgang}) \si{\decibel}
 \end{align*}
 
 \textbf{Phasengang}
@@ -82,7 +142,6 @@ Die Phase muss dem negativen Winkel entsprechen, um bei nachlaufendem Signal ein
 \textbf{Phasenlaufzeit/Zeitverzögerung}
 \[t_p = \frac{b(f)}{\omega}\]
 
-\clearpage
 \section{LTI-Systeme}
 
 \begin{figure}[H]
@@ -128,7 +187,7 @@ Bsp.:
 
 
 \textbf{Kausalität}\\
-Ein Signal ist kausal, \mytextcol{wenn gilt \(x(t) = 0\) für \(t < 0\)}
+Ein Signal ist kausal, \mytextcol{wenn gilt \(y(t) = 0\) für \(t < 0\)}
 
 \textbf{Stabilität}\\
 Beim Betrachten der Stabilität unterscheidet man 3 Fälle:
@@ -144,54 +203,70 @@ Die Sprungantwort ist das Ausgangssignal eines Systems wenn am Eingang die Sprun
 
 \LTI[.5]{\(\sigma(t)\)}{\(h(t)\)}{\(a(t)\)}
 
+\mytextcol{Ein Rechteckimpuls ist die Kombination mehrerer skalierter und verschobener Sprungfunktionen.} Aufgrund der Eigenschaften von LTI-Systemen kann die \mytextcol{Systemantwort auf einen Rechteckimpuls daher durch die Addition mehrerer Sprungantworten} konstruiert werden.
+
 Die Impulsantwort hingegen ist das Ausgangssignal eines Systems, wenn am Eingang die Impulsfunktion \(\delta(t)\) angelegt wird. Sie wird allgemein auch mit \mytextcol{\(h(t)\)} bezeichnet.
 
 \LTI[.5]{\(\delta(t)\)}{\(h(t)\)}{\(h(t)\)}
 
-Um von der Sprungantwort auf die Impulsantwort zu schließen muss \mybfcol{Die Sprungantwort einmal abgeleitet werden,} da gilt:
+Um von der Sprungantwort auf die Impulsantwort zu schließen muss \mytextcol{Die Sprungantwort einmal abgeleitet werden,} da gilt:
 \[\sigma(t)' = \delta(t) \quad\Longleftrightarrow\quad a(t)' = h(t)\]
 Demnach gilt auch:
 \[\int h(t) dt = a(t)\]
 
-\clearpage
+Die Impulsantwort \(h(t)\) beschreibt das gesamte System. \mytextcol{Wird die Impulsantwort transformiert, so ergibt sich die Übertragungsfunktion \(H(f)\).}
+\[h(t) \quad\laplace\quad H(f)\]
+
+Wird ein beliebiges Eingangssignal \(x(t)\) mit der Impulsantwort gefaltet, so ergibt sich das Ausgangssignal.
+\[x(t) \star h(t) = y(t)\]
+
 \section{Fourierreihen}
 
-\[f(t) = \frac{a_0}{2} + \sum_{k=1}^{\infty}(a_k \cos (k \omega t) + b_k \sin (k \omega t)), \quad \omega = \frac{2 \pi}{T}\]
+\[f(t) = s_G + \sum_{n=1}^{\infty}(a_n \cos (n \omega t) + b_n \sin (n \omega t)), \quad \omega = \frac{2 \pi}{T} / 2\pi \cdot f_0\]
 
 \textbf{Gleichanteil}
 
-\[s_G \quad = \quad \frac{\text{Integral über eine Periode}}{\text{Periodendauer}}\]
+\[s_G = \frac{a_0}{2} = c_0 \quad = \quad \frac{\text{Integral über eine Periode}}{\text{Periodendauer}}\]
 
-\textbf{Reelle Fourier-Koeffizienten \(a_k\) und \(b_k\)}
+\textbf{Reelle Fourier-Koeffizienten \(a_n\) und \(b_n\)}
 
 \begin{align*}
-  a_k &= \frac{2}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t) \cos (k \omega t) dt\\[1em]
-  b_k &= \frac{2}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t) \sin (k \omega t) dt
+  a_n &= \frac{2}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t) \cos (n \omega t) dt\\[1em]
+  b_n &= \frac{2}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t) \sin (n \omega t) dt
 \end{align*}
 
-\textbf{Umrechnung von \(c_k\) zu \(a_k\) und \(b_k\)}
+\textbf{Umrechnung von \(c_n\) zu \(a_n\) und \(b_n\)}
 \begin{empheq}[box = \fbox]{align*}
-  a_k &= 2 \mathrm{Re}(c_k)\\[1em]
-  b_k &= -2 \mathrm{Im}(c_k)\\[1em]
-  \rightarrow c_k &= \frac{a_k-ib_k}{2}
+  a_n &= 2 \mathrm{Re}(c_n)\\[1em]
+  b_n &= -2 \mathrm{Im}(c_n)\\[1em]
+  \rightarrow c_n &= \frac{a_n- \im b_n}{2}
 \end{empheq}
 
-\clearpage
-\section{Fouriertransformation}
+\section{Fouriertransformation, Laplacetransformation}
 
 \textbf{Fourierreihe aus Fouriertransformation}\\
 \mybfcol{Achtung:} stetiges \(f\) der Fouriertransformation wird durch diskretes \(\frac{k}{T}\) ersetzt
 \begin{align*}
   \frac{1}{T} &= f_0\\
   s(t)\quad &\laplace\quad S(f)\\
-  c_k &= \frac{1}{T} \cdot S\left(\frac{k}{T}\right)
+  c_n &= \frac{1}{T} \cdot S\left(\frac{n}{T}\right) = f_0 \cdot S(n\cdot f_0)
 \end{align*}
 Demnach lässt sich der Gleichanteil berechnen durch:
 \begin{empheq}[box = \fbox]{align*}
-  c_0 = \frac{1}{T} \cdot S\left(\frac{0}{T}\right)
+  c_0 = s_G = \frac{1}{T} \cdot S\left(\frac{0}{T}\right) = f_0 \cdot S(0 \cdot f_0)
 \end{empheq}
 
-\clearpage
+\mybfcol{Spezielle Rücktransformationen}\\
+Zu der Funktion 
+\[\frac{p}{p+1}\]
+ergibt die Korrespondenzentabelle keine Einträge. Hier hilft das Erweitern des Zählers mit \(1-1\):
+\begin{align*}
+  \frac{p}{p+1} &= \frac{p+1-1}{p+1}\\[1em]
+  \rightarrow &= \textcolor{maincolor}{\frac{p+1}{p+1}} - \frac{1}{p+1}\\[1em]
+  \rightarrow &= \textcolor{maincolor}{1} - \frac{1}{p+1}
+\end{align*}
+
+
 \section{Faltung}
 
 \begin{framed}
@@ -205,21 +280,19 @@ Wird eine Funktion mit \(\sigma (t)\) gefaltet, so ergibt sich für das Faltungs
 
 \[n(t) \star \sigma (t) = \int_{-\infty}^{\infty} n(\tau) \cdot \sigma(t - \tau) d\tau = \int_{-\infty}^t n(\tau) d\tau\]
 
-\clearpage
 \section{Filter und Übertragungsfunktionen}
 
 Im Fourierbereich: \(\omega = 2 \pi f\), im Laplacebereich: \(j\omega = p\)
 
-{
-  \centering
+{\centering
   \begin{tabular}{cllll}
     \toprule
     & \textbf{RC-Tiefpass} & \textbf{RC-Hochpass} & \textbf{RL-Tiefpass} & \textbf{RL-Hochpass}\\
     \midrule
-    \textbf{\(\frac{U_a}{U_e} = H(j\omega)\)} & \(\frac{1}{1 + j\omega R C}\) & \(\frac{j\omega RC}{1 + j\omega RC}\) & \(\frac{R}{R + j \omega L}\)& \(\frac{j\omega L}{R + j \omega L}\) \\[1em]
-    \textbf{\(f_G / \omega_G\)} & \(\frac{1}{2 \pi R C}; \frac{1}{RC}\) & \(\frac{1}{2 \pi R C}; \frac{1}{RC}\) & \(\frac{R}{2 \pi L}; \frac{R}{L}\) & \(\frac{R}{2 \pi L}; \frac{R}{L}\)\\
+    \textbf{\(\displaystyle\frac{U_a}{U_e} = H(j\omega)\)} & \(\displaystyle\frac{1}{1 + j\omega R C}\) & \(\displaystyle\frac{j\omega RC}{1 + j\omega RC}\) & \(\displaystyle\frac{R}{R + j \omega L}\)& \(\displaystyle\frac{j\omega L}{R + j \omega L}\) \\[1em]
+    \textbf{\(\displaystyle f_G / \omega_G\)} & \(\displaystyle\frac{1}{2 \pi R C}; \frac{1}{RC}\) & \(\displaystyle\frac{1}{2 \pi R C}; \frac{1}{RC}\) & \(\displaystyle\frac{R}{2 \pi L}; \frac{R}{L}\) & \(\displaystyle\frac{R}{2 \pi L}; \frac{R}{L}\)\\
     \bottomrule
-  \end{tabular}
+  \end{tabular}\par
 }
 
 \begin{minipage}{.48\linewidth}
@@ -267,9 +340,14 @@ Im Fourierbereich: \(\omega = 2 \pi f\), im Laplacebereich: \(j\omega = p\)
   \end{figure}
 \end{minipage}
 
-\textbf{Kondensator und Spule im Frequenzbereich}
+% Die \mytextcol{Grenzfrequenz \(f_G\)} ist die Frequenz, bei der das Ausgangssignal auf \SI{-3}{\decibel} im logarithmischen, bzw. \(\frac{1}{\sqrt{2}}\) im linearen Bereich im Vergleich zum Anfangswert abgesunken ist. Sie lässt sich berechnen durch auflösen der Gleichung:
+% \[\frac{1}{\sqrt{2}} = A(f_G)\]
+% bzw.
+% \[\SI{3}{\decibel} = -20 \cdot \log(A(f_G))\si{\decibel}\]
+% nach \(f_G\).
 
-\begin{center}
+\begin{table}[H]
+  \centering
   \begin{tabular}{lll}
     \toprule
     Frequenz & Spule & Kondensator\\
@@ -278,23 +356,36 @@ Im Fourierbereich: \(\omega = 2 \pi f\), im Laplacebereich: \(j\omega = p\)
     \(\infty\ \si{\hertz}\) & \(Z_L = \infty\ \si{\ohm}\); Leerlauf & \(Z_C = \SI{0}{\ohm}\); Kurzschluss\\
     \bottomrule
   \end{tabular}
-\end{center}
+  \caption{Spule und Kondensator im Frequenzbereich}
+\end{table}
 
-\clearpage
-\section{Konstruktion Bode-Diagramm}
 
-\textbf{Für Pol- Nullstellendiagramm:}
+\begin{samepage}
+  \mybfcol{Vorgehen, wenn nach \(H(p), p \rightarrow \infty\) gefragt ist}
+  \nopagebreak
+  \begin{enumerate}
+  \item Stelle \(H(p)\) auf
+  \item Löse so auf, dass \(p\)s einzeln stehen
+  \item Setze \(p = \infty\) ein
+  \item Kürze soweit wie möglich
+  \item Betrachte Rest
+  \end{enumerate}
+\end{samepage}
+
+
+
+\section{Bode-Diagramm}
+
+\mybfcol{Für Pol- Nullstellendiagramm:}
 
 \begin{enumerate}
 \item \(p\)s im Nenner und im Zähler isolieren
-\item Pol- und Nullstellen für \(p\) finden
+\item Pol- und Nullstellen des Bruchs für \(p\) finden
 \item Polstellen als \(\times\) und Nullstellen als \(\bigcirc\) in ein \(\operatorname{Re} / \operatorname{Im}\)-Diagramm (\(p\)-Ebene) eintragen
 \end{enumerate}
 
-\textbf{Bode-Diagramm}
-
-Das Bode-Diagramm besteht aus dem \textbf{Amplitudengang} und dem \textbf{Phasengang}. Der Amplitudengang \(A(f)\) lässt sich berechnen durch
-\[A(f) = -20\log(|H(f)|)\]
+Das Bode-Diagramm besteht aus dem \mytextcol{Amplitudengang} und dem \mytextcol{Phasengang}. Der Amplitudengang \(a(f)\) lässt sich berechnen durch
+\[a(f) = -20\log(|H(f)|)\]
 während sich der Phasengang \(b(f)\) berechnen lässt über
 \[b(f) = -\arctan\left(\frac{\operatorname{Im}(H(f))}{\operatorname{Re}(H(f))}\right) +
   \begin{cases}
@@ -303,7 +394,21 @@ während sich der Phasengang \(b(f)\) berechnen lässt über
   \end{cases}
 \]
 
-\textbf{Sprungantwort schnell berechnen}
+Zudem kann die lineare \mytextcol{Dämpfungsfunktion} als
+\[A(f) = |H(f)|\]
+dargestellt werden.
+
+\mybfcol{Schrittweise Konstruktion des Bode-Diagramms}
+
+\begin{enumerate}
+\item \(|H(f)|\) bestimmen
+\item \(f_G\) berechnen
+\item Werte für \(f\) in \(|H(f)|\) einsetzen (für \(f=0\) und zwei Werte im Sperrbereich) und \(20\cdot\log(|H(f)|)\) berechnen
+\item Asymptoten zeichnen
+\item Bode Diagramm zeichnen, \(f_G\) befindet sich am Schnittpunkt beider Asymptoten
+\end{enumerate}
+
+\mybfcol{Sprungantwort schnell berechnen}
 \[a(t) = (a(0) - a(\infty)) \cdot e^{-\frac{t}{T}} + a(\infty)\]
 
 \newpage

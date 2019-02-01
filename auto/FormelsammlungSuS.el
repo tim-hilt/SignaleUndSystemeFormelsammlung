@@ -13,9 +13,12 @@
     "scrartcl12"
     "siunitx"
     "pdfpages"
+    "pgfplots"
+    "amsfonts"
+    "trfsigns"
+    "scrlayer-scrpage"
     "circuitikz"
-    "mystyle"
-    "scrlayer-scrpage")
+    "mystyle")
    (TeX-add-symbols
     '("LTI" ["argument"] 3)))
  :latex)
