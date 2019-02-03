@@ -9,4 +9,5 @@
 \contentsline {section}{\numberline {7}Bode-Diagramm}{11}{section.7}
 \contentsline {section}{\numberline {8}Anhang}{12}{section*.2}
 \contentsline {subsection}{\numberline {A}Tabellen aus Buch von Prof.\ Koch und Prof.\ Stämpfle}{12}{section*.3}
-\contentsline {subsection}{\numberline {B}Tabelle aus Vorlesung}{18}{section*.4}
+\contentsline {subsection}{\numberline {B}Impulstabelle zu FT aus Vorlesung}{18}{section*.4}
+\contentsline {subsection}{\numberline {C}Werte Si-Funktion}{19}{section*.5}

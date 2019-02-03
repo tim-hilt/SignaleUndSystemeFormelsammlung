@@ -128,6 +128,16 @@
     - \frac{\pi}{2} & \text{für } x = 0,y < 0
   \end{cases}\]
 
+\begin{samepage}
+  \mybfcol{Umrechnung \(e\)-Funktion zu Cosinus und Sinus}
+  \nopagebreak
+  \begin{mathframed}
+    \cos \varphi = \frac{e^{\im \varphi} + e^{- \im \varphi}}{2} \qquad
+    \sin \varphi = \frac{e^{\im \varphi} - e^{- \im \varphi}}{2 \im}
+  \end{mathframed}
+\end{samepage}
+
+
 \textbf{Dämpfung zweier Pegel}
 \begin{align*}
   a &= 20 \cdot \log \left(\frac{\text{Eingang}}{\text{Ausgang}} \right) \si{\decibel}\\
@@ -214,6 +224,9 @@ Um von der Sprungantwort auf die Impulsantwort zu schließen muss \mytextcol{Die
 Demnach gilt auch:
 \[\int h(t) dt = a(t)\]
 
+Darüber hinaus gilt:
+\[A(p) = \frac{1}{p} \cdot H(p) \quad\Rightarrow\quad H(p) = p \cdot A(p)\]
+
 Die Impulsantwort \(h(t)\) beschreibt das gesamte System. \mytextcol{Wird die Impulsantwort transformiert, so ergibt sich die Übertragungsfunktion \(H(f)\).}
 \[h(t) \quad\laplace\quad H(f)\]
 
@@ -224,28 +237,31 @@ Wird ein beliebiges Eingangssignal \(x(t)\) mit der Impulsantwort gefaltet, so e
 
 \[f(t) = s_G + \sum_{n=1}^{\infty}(a_n \cos (n \omega t) + b_n \sin (n \omega t)), \quad \omega = \frac{2 \pi}{T} / 2\pi \cdot f_0\]
 
-\textbf{Gleichanteil}
+\mybfcol{Gleichanteil}
 
 \[s_G = \frac{a_0}{2} = c_0 \quad = \quad \frac{\text{Integral über eine Periode}}{\text{Periodendauer}}\]
 
-\textbf{Reelle Fourier-Koeffizienten \(a_n\) und \(b_n\)}
+\mybfcol{Reelle Fourier-Koeffizienten \(a_n\) und \(b_n\)}
 
 \begin{align*}
   a_n &= \frac{2}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t) \cos (n \omega t) dt\\[1em]
   b_n &= \frac{2}{T} \int_{-\frac{T}{2}}^{\frac{T}{2}}f(t) \sin (n \omega t) dt
 \end{align*}
 
-\textbf{Umrechnung von \(c_n\) zu \(a_n\) und \(b_n\)}
+\mybfcol{Umrechnung von \(c_n\) zu \(a_n\) und \(b_n\)}
 \begin{empheq}[box = \fbox]{align*}
   a_n &= 2 \mathrm{Re}(c_n)\\[1em]
   b_n &= -2 \mathrm{Im}(c_n)\\[1em]
   \rightarrow c_n &= \frac{a_n- \im b_n}{2}
 \end{empheq}
 
+\mybfcol{Berechnung der Amplituden}
+\[\hat{s}_n = 2 \cdot |c_n| = \sqrt{a_n^2 + b_n^2}\]
+
 \section{Fouriertransformation, Laplacetransformation}
 
-\textbf{Fourierreihe aus Fouriertransformation}\\
-\mybfcol{Achtung:} stetiges \(f\) der Fouriertransformation wird durch diskretes \(\frac{k}{T}\) ersetzt
+\mybfcol{Fourierreihe aus Fouriertransformation}\\
+\mytextcol{Achtung:} stetiges \(f\) der Fouriertransformation wird durch diskretes \(\frac{n}{T}\) ersetzt
 \begin{align*}
   \frac{1}{T} &= f_0\\
   s(t)\quad &\laplace\quad S(f)\\
@@ -255,6 +271,9 @@ Demnach lässt sich der Gleichanteil berechnen durch:
 \begin{empheq}[box = \fbox]{align*}
   c_0 = s_G = \frac{1}{T} \cdot S\left(\frac{0}{T}\right) = f_0 \cdot S(0 \cdot f_0)
 \end{empheq}
+
+\mybfcol{Transformation von \(\cos(2\pi f_0 t)\)}
+\[\cos(2\pi f_0 t) \quad\laplace\quad \frac{1}{2}\left(\delta(f-f_0) + \delta(f+f_0)\right)\]
 
 \mybfcol{Spezielle Rücktransformationen}\\
 Zu der Funktion 
@@ -281,6 +300,10 @@ Wird eine Funktion mit \(\sigma (t)\) gefaltet, so ergibt sich für das Faltungs
 \[n(t) \star \sigma (t) = \int_{-\infty}^{\infty} n(\tau) \cdot \sigma(t - \tau) d\tau = \int_{-\infty}^t n(\tau) d\tau\]
 
 \section{Filter und Übertragungsfunktionen}
+
+Zeitkonstante \(\tau\) beim \mybfcol{Kondensator}: \dotfill \(\tau = R \cdot C\)
+
+Zeitkonstante \(\tau\) bei der \mybfcol{Spule}: \dotfill \(\tau = \frac{L}{R}\)
 
 Im Fourierbereich: \(\omega = 2 \pi f\), im Laplacebereich: \(j\omega = p\)
 
@@ -394,7 +417,7 @@ während sich der Phasengang \(b(f)\) berechnen lässt über
   \end{cases}
 \]
 
-Zudem kann die lineare \mytextcol{Dämpfungsfunktion} als
+Zudem kann der  \mytextcol{lineare Amplitudengang} als
 \[A(f) = |H(f)|\]
 dargestellt werden.
 
@@ -425,8 +448,14 @@ dargestellt werden.
 \newpage
 \phantomsection%
 \addtocounter{subsection}{1}
-\addsubsectiontocentry{B}{Tabelle aus Vorlesung}
+\addsubsectiontocentry{B}{Impulstabelle zu FT aus Vorlesung}
 \includepdf{FourierKorrespondenzen.pdf}
+
+\newpage
+\phantomsection%
+\addtocounter{subsection}{1}
+\addsubsectiontocentry{C}{Werte Si-Funktion}
+\includepdf{sivalues.pdf}
 
 \end{document}
 
