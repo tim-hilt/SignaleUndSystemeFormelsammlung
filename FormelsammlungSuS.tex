@@ -119,7 +119,7 @@
   |Z| &= \sqrt{a^2 +b^2}
 \end{align*}
 
-\textbf{Winkel einer komplexen Zahl}
+\mybfcol{Winkel einer komplexen Zahl \(Z = x + jy\)}
 \[\arg (Z) = \varphi =
   \begin{cases}
     \arctan \left(\frac{y}{x}\right) & \text{für } x>0, y \text{ bel.}\\
@@ -127,6 +127,12 @@
     \frac{\pi}{2} & \text{für } x = 0, y > 0\\
     - \frac{\pi}{2} & \text{für } x = 0,y < 0
   \end{cases}\]
+
+\begin{figure}[H]
+  \centering
+  \includesvg[width=.5\textwidth]{Arctangent}
+  \caption{Verlauf der Arkustangens-Funktion}
+\end{figure}
 
 \begin{samepage}
   \mybfcol{Umrechnung \(e\)-Funktion zu Cosinus und Sinus}
@@ -232,6 +238,17 @@ Die Impulsantwort \(h(t)\) beschreibt das gesamte System. \mytextcol{Wird die Im
 
 Wird ein beliebiges Eingangssignal \(x(t)\) mit der Impulsantwort gefaltet, so ergibt sich das Ausgangssignal.
 \[x(t) \star h(t) = y(t)\]
+
+\mybfcol{Sprungantwort spezieller Filter}
+
+{\centering
+  \begin{tabular}{ll}
+    \toprule
+    Sprungantwort Tiefpass: & \(a(t) = (1 - e^{-\frac{t}{\tau}})\)\\
+    Sprungantwort Hochpass: & \(a(t) = e^{-\frac{t}{\tau}}\)\\
+    \bottomrule
+  \end{tabular}\par
+}
 
 \section{Fourierreihen}
 

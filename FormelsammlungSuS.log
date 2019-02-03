@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018/Arch Linux)  (format=lualatex 2019.1.25)  3 FEB 2019 17:49
+This is LuaTeX, Version 1.07.0 (TeX Live 2018/Arch Linux)  (format=lualatex 2019.1.25)  3 FEB 2019 19:51
  system commands enabled.
  file:line:error style messages enabled.
 **\input FormelsammlungSuS.tex
@@ -32,7 +32,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.109 seconds
+luaotfload | main : initialization completed in 0.130 seconds
 
 (./FormelsammlungSuS.tex
 (/usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -2020,19 +2020,31 @@ LaTeX Font Info:    Font shape `TU/SourceCodePro(0)/m/n' will be
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package svg Info: Last page of `./svg-inkscape/Arctangent_svg-tex.pdf' is 1 on i
+nput line 133.
+
+(./svg-inkscape/Arctangent_svg-tex.pdf_tex
+<./svg-inkscape/Arctangent_svg-tex.pdf, id=83, page=1, 532.94812pt x 252.4078pt>
+
+File: ./svg-inkscape/Arctangent_svg-tex.pdf Graphic file (type pdf)
+<use ./svg-inkscape/Arctangent_svg-tex.pdf, page 1>
+Package luatex.def Info: ./svg-inkscape/Arctangent_svg-tex.pdf , page1 used on i
+nput line 56.
+(luatex.def)             Requested size: 227.62206pt x 107.80145pt.
+)
 Underfull \vbox (badness 3168) has occurred while \output is active []
 
  [2
 
 ]
-[3]
-Overfull \hbox (0.62495pt too wide) in paragraph at lines 206--207
+[3<./svg-inkscape/Arctangent_svg-tex.pdf>]
+Overfull \hbox (0.62495pt too wide) in paragraph at lines 212--213
 [][]\TU/FiraSans(0)/m/n/12 Das Sys-tem ist grenz-sta-bil[], wenn nur ein-fa-che
  Po-le im Pol-Nullstellen-Diagramm
  []
 
 
-Overfull \hbox (0.48494pt too wide) in paragraph at lines 207--208
+Overfull \hbox (0.48494pt too wide) in paragraph at lines 213--214
 [][]\TU/FiraSans(0)/m/n/12 Das Sys-tem ist in-sta-bil[], wenn Po-le in der rech
 -ten Hal-be-be-ne des Pol-Nullstellen-
  []
@@ -2040,218 +2052,218 @@ Overfull \hbox (0.48494pt too wide) in paragraph at lines 207--208
 [4
 
 ]
-Overfull \hbox (4.45589pt too wide) in paragraph at lines 212--213
+Overfull \hbox (4.45589pt too wide) in paragraph at lines 218--219
 []\TU/FiraSans(0)/m/n/12 Die Sprung-ant-wort ist das Aus-gangs-si-gnal ei-nes S
 ys-tems wenn am Ein-gang die Sprung-
  []
 
 
-Overfull \hbox (7.0198pt too wide) in paragraph at lines 216--217
+Overfull \hbox (7.0198pt too wide) in paragraph at lines 222--223
 [][]\TU/FiraSans(0)/m/n/12 Ein Recht-eck-im-puls ist die Kom-bi-na-ti-on meh-re
 -rer ska-lier-ter und ver-scho-be-ner Sprung-
  []
 
 
-Overfull \hbox (0.99583pt too wide) in paragraph at lines 230--231
+Overfull \hbox (0.99583pt too wide) in paragraph at lines 236--237
 []\TU/FiraSans(0)/m/n/12 Die Im-puls-ant-wort $\OML/cmm/m/it/12 h\OT1/cmr/m/n/1
 2 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )$ \TU/FiraSans(0)/m/n/12 be-schreibt das 
 ge-sam-te Sys-tem. []Wird die Im-puls-ant-wort trans-
  []
 
-[5] [6
+[5] [6] [7
 
-] [7
+] [8
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
 
  []
 
-[8
+[9
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9
+ [10
 
 ]
-[10] [11
+[11] [12
 
 ]
-<Cheatsheet.pdf, id=164, 597.50829pt x 845.0471pt>
+<Cheatsheet.pdf, id=203, 597.50829pt x 845.0471pt>
 File: Cheatsheet.pdf Graphic file (type pdf)
 <use Cheatsheet.pdf>
-Package luatex.def Info: Cheatsheet.pdf  used on input line 446.
+Package luatex.def Info: Cheatsheet.pdf  used on input line 463.
 (luatex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: Cheatsheet.pdf Graphic file (type pdf)
 <use Cheatsheet.pdf>
-Package luatex.def Info: Cheatsheet.pdf  used on input line 446.
+Package luatex.def Info: Cheatsheet.pdf  used on input line 463.
 (luatex.def)             Requested size: 597.50682pt x 845.04504pt.
-<Cheatsheet.pdf, id=167, page=7, 597.50829pt x 845.0471pt>
+<Cheatsheet.pdf, id=206, page=7, 597.50829pt x 845.0471pt>
 File: Cheatsheet.pdf Graphic file (type pdf)
 <use Cheatsheet.pdf, page 7>
-Package luatex.def Info: Cheatsheet.pdf , page7 used on input line 446.
+Package luatex.def Info: Cheatsheet.pdf , page7 used on input line 463.
 (luatex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: Cheatsheet.pdf Graphic file (type pdf)
 <use Cheatsheet.pdf, page 7>
-Package luatex.def Info: Cheatsheet.pdf , page7 used on input line 446.
+Package luatex.def Info: Cheatsheet.pdf , page7 used on input line 463.
 (luatex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Cheatsheet.pdf Graphic file (type pdf)
 <use Cheatsheet.pdf, page 7>
-Package luatex.def Info: Cheatsheet.pdf , page7 used on input line 446.
+Package luatex.def Info: Cheatsheet.pdf , page7 used on input line 463.
 (luatex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Cheatsheet.pdf Graphic file (type pdf)
 <use Cheatsheet.pdf, page 7>
-Package luatex.def Info: Cheatsheet.pdf , page7 used on input line 446.
+Package luatex.def Info: Cheatsheet.pdf , page7 used on input line 463.
 (luatex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Cheatsheet.pdf Graphic file (type pdf)
 <use Cheatsheet.pdf, page 7>
-Package luatex.def Info: Cheatsheet.pdf , page7 used on input line 446.
-(luatex.def)             Requested size: 597.53416pt x 845.08372pt.
- [12<./Cheatsheet.pdf>]
-<Cheatsheet.pdf, id=222, page=8, 597.50829pt x 845.0471pt>
-File: Cheatsheet.pdf Graphic file (type pdf)
-<use Cheatsheet.pdf, page 8>
-Package luatex.def Info: Cheatsheet.pdf , page8 used on input line 446.
-(luatex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: Cheatsheet.pdf Graphic file (type pdf)
-<use Cheatsheet.pdf, page 8>
-Package luatex.def Info: Cheatsheet.pdf , page8 used on input line 446.
-(luatex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: Cheatsheet.pdf Graphic file (type pdf)
-<use Cheatsheet.pdf, page 8>
-Package luatex.def Info: Cheatsheet.pdf , page8 used on input line 446.
+Package luatex.def Info: Cheatsheet.pdf , page7 used on input line 463.
 (luatex.def)             Requested size: 597.53416pt x 845.08372pt.
  [13<./Cheatsheet.pdf>]
-<Cheatsheet.pdf, id=245, page=9, 597.50829pt x 845.0471pt>
+<Cheatsheet.pdf, id=261, page=8, 597.50829pt x 845.0471pt>
 File: Cheatsheet.pdf Graphic file (type pdf)
-<use Cheatsheet.pdf, page 9>
-Package luatex.def Info: Cheatsheet.pdf , page9 used on input line 446.
+<use Cheatsheet.pdf, page 8>
+Package luatex.def Info: Cheatsheet.pdf , page8 used on input line 463.
 (luatex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Cheatsheet.pdf Graphic file (type pdf)
-<use Cheatsheet.pdf, page 9>
-Package luatex.def Info: Cheatsheet.pdf , page9 used on input line 446.
+<use Cheatsheet.pdf, page 8>
+Package luatex.def Info: Cheatsheet.pdf , page8 used on input line 463.
 (luatex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Cheatsheet.pdf Graphic file (type pdf)
-<use Cheatsheet.pdf, page 9>
-Package luatex.def Info: Cheatsheet.pdf , page9 used on input line 446.
+<use Cheatsheet.pdf, page 8>
+Package luatex.def Info: Cheatsheet.pdf , page8 used on input line 463.
 (luatex.def)             Requested size: 597.53416pt x 845.08372pt.
  [14<./Cheatsheet.pdf>]
-<Cheatsheet.pdf, id=254, page=10, 597.50829pt x 845.0471pt>
+<Cheatsheet.pdf, id=284, page=9, 597.50829pt x 845.0471pt>
+File: Cheatsheet.pdf Graphic file (type pdf)
+<use Cheatsheet.pdf, page 9>
+Package luatex.def Info: Cheatsheet.pdf , page9 used on input line 463.
+(luatex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Cheatsheet.pdf Graphic file (type pdf)
+<use Cheatsheet.pdf, page 9>
+Package luatex.def Info: Cheatsheet.pdf , page9 used on input line 463.
+(luatex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Cheatsheet.pdf Graphic file (type pdf)
+<use Cheatsheet.pdf, page 9>
+Package luatex.def Info: Cheatsheet.pdf , page9 used on input line 463.
+(luatex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [15<./Cheatsheet.pdf>]
+<Cheatsheet.pdf, id=293, page=10, 597.50829pt x 845.0471pt>
 File: Cheatsheet.pdf Graphic file (type pdf)
 <use Cheatsheet.pdf, page 10>
-Package luatex.def Info: Cheatsheet.pdf , page10 used on input line 446.
+Package luatex.def Info: Cheatsheet.pdf , page10 used on input line 463.
 (luatex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Cheatsheet.pdf Graphic file (type pdf)
 <use Cheatsheet.pdf, page 10>
-Package luatex.def Info: Cheatsheet.pdf , page10 used on input line 446.
+Package luatex.def Info: Cheatsheet.pdf , page10 used on input line 463.
 (luatex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Cheatsheet.pdf Graphic file (type pdf)
 <use Cheatsheet.pdf, page 10>
-Package luatex.def Info: Cheatsheet.pdf , page10 used on input line 446.
+Package luatex.def Info: Cheatsheet.pdf , page10 used on input line 463.
 (luatex.def)             Requested size: 597.53416pt x 845.08372pt.
 
-[15<./Cheatsheet.pdf>]
-<Cheatsheet.pdf, id=263, page=11, 597.50829pt x 845.0471pt>
+[16<./Cheatsheet.pdf>]
+<Cheatsheet.pdf, id=302, page=11, 597.50829pt x 845.0471pt>
 File: Cheatsheet.pdf Graphic file (type pdf)
 <use Cheatsheet.pdf, page 11>
-Package luatex.def Info: Cheatsheet.pdf , page11 used on input line 446.
-(luatex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: Cheatsheet.pdf Graphic file (type pdf)
-<use Cheatsheet.pdf, page 11>
-Package luatex.def Info: Cheatsheet.pdf , page11 used on input line 446.
+Package luatex.def Info: Cheatsheet.pdf , page11 used on input line 463.
 (luatex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Cheatsheet.pdf Graphic file (type pdf)
 <use Cheatsheet.pdf, page 11>
-Package luatex.def Info: Cheatsheet.pdf , page11 used on input line 446.
-(luatex.def)             Requested size: 597.53416pt x 845.08372pt.
- [16<./Cheatsheet.pdf>]
-<Cheatsheet.pdf, id=269, page=12, 597.50829pt x 845.0471pt>
-File: Cheatsheet.pdf Graphic file (type pdf)
-<use Cheatsheet.pdf, page 12>
-Package luatex.def Info: Cheatsheet.pdf , page12 used on input line 446.
+Package luatex.def Info: Cheatsheet.pdf , page11 used on input line 463.
 (luatex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: Cheatsheet.pdf Graphic file (type pdf)
-<use Cheatsheet.pdf, page 12>
-Package luatex.def Info: Cheatsheet.pdf , page12 used on input line 446.
-(luatex.def)             Requested size: 597.53416pt x 845.08372pt.
-File: Cheatsheet.pdf Graphic file (type pdf)
-<use Cheatsheet.pdf, page 12>
-Package luatex.def Info: Cheatsheet.pdf , page12 used on input line 446.
+<use Cheatsheet.pdf, page 11>
+Package luatex.def Info: Cheatsheet.pdf , page11 used on input line 463.
 (luatex.def)             Requested size: 597.53416pt x 845.08372pt.
  [17<./Cheatsheet.pdf>]
-<FourierKorrespondenzen.pdf, id=279, 845.1575pt x 597.23125pt>
+<Cheatsheet.pdf, id=309, page=12, 597.50829pt x 845.0471pt>
+File: Cheatsheet.pdf Graphic file (type pdf)
+<use Cheatsheet.pdf, page 12>
+Package luatex.def Info: Cheatsheet.pdf , page12 used on input line 463.
+(luatex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Cheatsheet.pdf Graphic file (type pdf)
+<use Cheatsheet.pdf, page 12>
+Package luatex.def Info: Cheatsheet.pdf , page12 used on input line 463.
+(luatex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: Cheatsheet.pdf Graphic file (type pdf)
+<use Cheatsheet.pdf, page 12>
+Package luatex.def Info: Cheatsheet.pdf , page12 used on input line 463.
+(luatex.def)             Requested size: 597.53416pt x 845.08372pt.
+ [18<./Cheatsheet.pdf>]
+<FourierKorrespondenzen.pdf, id=319, 845.1575pt x 597.23125pt>
 File: FourierKorrespondenzen.pdf Graphic file (type pdf)
 <use FourierKorrespondenzen.pdf>
-Package luatex.def Info: FourierKorrespondenzen.pdf  used on input line 452.
+Package luatex.def Info: FourierKorrespondenzen.pdf  used on input line 469.
 (luatex.def)             Requested size: 845.15544pt x 597.22978pt.
 File: FourierKorrespondenzen.pdf Graphic file (type pdf)
 <use FourierKorrespondenzen.pdf>
-Package luatex.def Info: FourierKorrespondenzen.pdf  used on input line 452.
+Package luatex.def Info: FourierKorrespondenzen.pdf  used on input line 469.
 (luatex.def)             Requested size: 845.15544pt x 597.22978pt.
-<FourierKorrespondenzen.pdf, id=282, page=1, 845.1575pt x 597.23125pt>
+<FourierKorrespondenzen.pdf, id=322, page=1, 845.1575pt x 597.23125pt>
 File: FourierKorrespondenzen.pdf Graphic file (type pdf)
 <use FourierKorrespondenzen.pdf, page 1>
 Package luatex.def Info: FourierKorrespondenzen.pdf , page1 used on input line 4
-52.
+69.
 (luatex.def)             Requested size: 845.15544pt x 597.22978pt.
 File: FourierKorrespondenzen.pdf Graphic file (type pdf)
 <use FourierKorrespondenzen.pdf, page 1>
 Package luatex.def Info: FourierKorrespondenzen.pdf , page1 used on input line 4
-52.
+69.
 (luatex.def)             Requested size: 597.61578pt x 422.30568pt.
 File: FourierKorrespondenzen.pdf Graphic file (type pdf)
 <use FourierKorrespondenzen.pdf, page 1>
 Package luatex.def Info: FourierKorrespondenzen.pdf , page1 used on input line 4
-52.
+69.
 (luatex.def)             Requested size: 597.61578pt x 422.30568pt.
 File: FourierKorrespondenzen.pdf Graphic file (type pdf)
 <use FourierKorrespondenzen.pdf, page 1>
 Package luatex.def Info: FourierKorrespondenzen.pdf , page1 used on input line 4
-52.
+69.
 (luatex.def)             Requested size: 597.61578pt x 422.30568pt.
 File: FourierKorrespondenzen.pdf Graphic file (type pdf)
 <use FourierKorrespondenzen.pdf, page 1>
 Package luatex.def Info: FourierKorrespondenzen.pdf , page1 used on input line 4
-52.
+69.
 (luatex.def)             Requested size: 597.61578pt x 422.30568pt.
- [18<./FourierKorrespondenzen.pdf>]
-<sivalues.pdf, id=331, 597.45204pt x 845.1575pt>
+ [19<./FourierKorrespondenzen.pdf>]
+<sivalues.pdf, id=370, 597.45204pt x 845.1575pt>
 File: sivalues.pdf Graphic file (type pdf)
 <use sivalues.pdf>
-Package luatex.def Info: sivalues.pdf  used on input line 458.
+Package luatex.def Info: sivalues.pdf  used on input line 475.
 (luatex.def)             Requested size: 597.45058pt x 845.15544pt.
 File: sivalues.pdf Graphic file (type pdf)
 <use sivalues.pdf>
-Package luatex.def Info: sivalues.pdf  used on input line 458.
+Package luatex.def Info: sivalues.pdf  used on input line 475.
 (luatex.def)             Requested size: 597.45058pt x 845.15544pt.
-<sivalues.pdf, id=334, page=1, 597.45204pt x 845.1575pt>
+<sivalues.pdf, id=373, page=1, 597.45204pt x 845.1575pt>
 File: sivalues.pdf Graphic file (type pdf)
 <use sivalues.pdf, page 1>
-Package luatex.def Info: sivalues.pdf , page1 used on input line 458.
+Package luatex.def Info: sivalues.pdf , page1 used on input line 475.
 (luatex.def)             Requested size: 597.45058pt x 845.15544pt.
 File: sivalues.pdf Graphic file (type pdf)
 <use sivalues.pdf, page 1>
-Package luatex.def Info: sivalues.pdf , page1 used on input line 458.
+Package luatex.def Info: sivalues.pdf , page1 used on input line 475.
 (luatex.def)             Requested size: 597.47792pt x 845.19412pt.
 File: sivalues.pdf Graphic file (type pdf)
 <use sivalues.pdf, page 1>
-Package luatex.def Info: sivalues.pdf , page1 used on input line 458.
+Package luatex.def Info: sivalues.pdf , page1 used on input line 475.
 (luatex.def)             Requested size: 597.47792pt x 845.19412pt.
 File: sivalues.pdf Graphic file (type pdf)
 <use sivalues.pdf, page 1>
-Package luatex.def Info: sivalues.pdf , page1 used on input line 458.
+Package luatex.def Info: sivalues.pdf , page1 used on input line 475.
 (luatex.def)             Requested size: 597.47792pt x 845.19412pt.
 File: sivalues.pdf Graphic file (type pdf)
 <use sivalues.pdf, page 1>
-Package luatex.def Info: sivalues.pdf , page1 used on input line 458.
+Package luatex.def Info: sivalues.pdf , page1 used on input line 475.
 (luatex.def)             Requested size: 597.47792pt x 845.19412pt.
- [19<./sivalues.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 460.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 460.
+ [20<./sivalues.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 477.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 477.
  (./FormelsammlungSuS.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 460.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 460.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 477.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 477.
 Package rerunfilecheck Info: File `FormelsammlungSuS.out' has not changed.
 (rerunfilecheck)             Checksum: 581B056F0337C7E6E153BF1BDF67373D;661.
 Package logreq Info: Writing requests to 'FormelsammlungSuS.run.xml'.
@@ -2260,16 +2272,16 @@ Package logreq Info: Writing requests to 'FormelsammlungSuS.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 65914 strings out of 494407
+ 65957 strings out of 494407
  100000,2848258 words of node,token memory allocated
  715 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 32 attribute, 76 glue_spec
 , 32 attribute_list, 1 write nodes
-   avail lists: 1:4,2:6130,3:1467,4:102,5:317,6:67,7:3999,8:73,9:822,10:5,11:135
+   avail lists: 1:4,2:6122,3:1467,4:102,5:317,6:67,7:4000,8:73,9:818,10:5,11:147
 ,12:1
- 68001 multiletter control sequences out of 65536+600000
+ 68016 multiletter control sequences out of 65536+600000
  118 fonts using 20848975 bytes
- 73i,21n,100p,9102b,2189s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 73i,20n,100p,9102b,2189s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf-dist/fonts/opentype/adobe/sourceserifpro/SourceSerifPro-Bold.o
 tf></usr/share/texmf-dist/fonts/opentype/public/fira/FiraSans-Bold.otf></usr/sha
 re/texmf-dist/fonts/opentype/adobe/sourceserifpro/SourceSerifPro-Regular.otf></u
@@ -2287,10 +2299,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcir
 cle1.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on FormelsammlungSuS.pdf (19 pages, 616441 bytes).
+Output written on FormelsammlungSuS.pdf (20 pages, 629109 bytes).
 
-PDF statistics: 431 PDF objects out of 1000 (max. 8388607)
- 307 compressed objects within 4 object streams
- 54 named destinations out of 1000 (max. 131072)
+PDF statistics: 470 PDF objects out of 1000 (max. 8388607)
+ 333 compressed objects within 4 object streams
+ 56 named destinations out of 1000 (max. 131072)
  104 words of extra memory for PDF output out of 10000 (max. 100000000)
 

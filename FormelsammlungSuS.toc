@@ -2,12 +2,12 @@
 \babel@toc {ngerman}{}
 \contentsline {section}{\numberline {1}Grundlagen}{2}{section.1}
 \contentsline {section}{\numberline {2}LTI-Systeme}{4}{section.2}
-\contentsline {section}{\numberline {3}Fourierreihen}{6}{section.3}
-\contentsline {section}{\numberline {4}Fouriertransformation, Laplacetransformation}{7}{section.4}
-\contentsline {section}{\numberline {5}Faltung}{8}{section.5}
-\contentsline {section}{\numberline {6}Filter und Übertragungsfunktionen}{9}{section.6}
-\contentsline {section}{\numberline {7}Bode-Diagramm}{11}{section.7}
-\contentsline {section}{\numberline {8}Anhang}{12}{section*.2}
-\contentsline {subsection}{\numberline {A}Tabellen aus Buch von Prof.\ Koch und Prof.\ Stämpfle}{12}{section*.3}
-\contentsline {subsection}{\numberline {B}Impulstabelle zu FT aus Vorlesung}{18}{section*.4}
-\contentsline {subsection}{\numberline {C}Werte Si-Funktion}{19}{section*.5}
+\contentsline {section}{\numberline {3}Fourierreihen}{7}{section.3}
+\contentsline {section}{\numberline {4}Fouriertransformation, Laplacetransformation}{8}{section.4}
+\contentsline {section}{\numberline {5}Faltung}{9}{section.5}
+\contentsline {section}{\numberline {6}Filter und Übertragungsfunktionen}{10}{section.6}
+\contentsline {section}{\numberline {7}Bode-Diagramm}{12}{section.7}
+\contentsline {section}{\numberline {8}Anhang}{13}{section*.2}
+\contentsline {subsection}{\numberline {A}Tabellen aus Buch von Prof.\ Koch und Prof.\ Stämpfle}{13}{section*.3}
+\contentsline {subsection}{\numberline {B}Impulstabelle zu FT aus Vorlesung}{19}{section*.4}
+\contentsline {subsection}{\numberline {C}Werte Si-Funktion}{20}{section*.5}
